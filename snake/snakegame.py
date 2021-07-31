@@ -8,7 +8,7 @@ width, height = (600, 400)
 window = pygame.display.set_mode((width, height))
 
 pygame.display.set_caption("Snake Game")
-icon = pygame.image.load('retro/snake/snake.png')
+icon = pygame.image.load('snake/snake.png')
 pygame.display.set_icon(icon)
 font_style = pygame.font.SysFont("Arial", 25)
 

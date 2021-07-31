@@ -7,7 +7,7 @@ width, height = (600, 400)
 
 window = pygame.display.set_mode((width, height))
 
-icon = pygame.image.load('retro/pong/pongicon.png')
+icon = pygame.image.load('pong/pongicon.png')
 pygame.display.set_icon(icon)
 pygame.display.set_caption("Pong Game")
 
@@ -16,7 +16,7 @@ black = (0, 0, 0)
 white = (255, 255, 255)
 grey = (71, 57, 57)
 
-ball = pygame.image.load('retro/pong/pong.png').convert_alpha()
+ball = pygame.image.load('pong/pong.png').convert_alpha()
 ball = pygame.transform.scale(ball, (30, 30))
 ball_rect = ball.get_rect(center=(width/2, height/2))
 
@@ -24,13 +24,13 @@ ball_rect = ball.get_rect(center=(width/2, height/2))
 ball_x = 5
 ball_y = 5
 
-paddle1 = pygame.image.load('retro/pong/pongpaddle.png').convert_alpha()
+paddle1 = pygame.image.load('pong/pongpaddle.png').convert_alpha()
 paddle1_rect = paddle1.get_rect(center=(555, height/2))
 
-paddle2 = pygame.image.load('retro/pong/pongpaddle.png').convert_alpha()
+paddle2 = pygame.image.load('pong/pongpaddle.png').convert_alpha()
 paddle2_rect = paddle2.get_rect(center=(45, height/2))
 
-font = pygame.font.Font('retro/pong/Pixeltype.ttf', 40)
+font = pygame.font.Font('pong/Pixeltype.ttf', 40)
 
 title_surface = font.render('PONG', False, white)
 title_rect = title_surface.get_rect(center=(300, 50))

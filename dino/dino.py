@@ -6,33 +6,33 @@ pygame.init()
 # setup
 WIDTH, HEIGHT = 567, 300
 window = pygame.display.set_mode((WIDTH, HEIGHT))
-font = pygame.font.Font('PressStart2P-Regular.ttf', 10)
+font = pygame.font.Font('dino/PressStart2P-Regular.ttf', 10)
 pygame.display.set_caption("Dino Game")
-icon = pygame.image.load('cactusicon.png')
+icon = pygame.image.load('dino/cactusicon.png')
 pygame.display.set_icon(icon)
 
 
-cactus = pygame.image.load('tree.png').convert_alpha()
+cactus = pygame.image.load('dino/tree.png').convert_alpha()
 cactus = pygame.transform.rotozoom(cactus, 0, 0.15)
-flying = pygame.image.load('meteor.png').convert_alpha()
+flying = pygame.image.load('dino/meteor.png').convert_alpha()
 flying = pygame.transform.rotozoom(flying, 0, 0.15)
 
-cloud = pygame.image.load('cloud.png').convert_alpha()
+cloud = pygame.image.load('dino/cloud.png').convert_alpha()
 cloud = pygame.transform.rotozoom(cloud, 0, 0.5)
 
-dino_walk_1 = pygame.image.load('dino1.png').convert_alpha()
+dino_walk_1 = pygame.image.load('dino/dino1.png').convert_alpha()
 dino_walk_1 = pygame.transform.rotozoom(dino_walk_1, 0, 0.6)
-dino_walk_2 = pygame.image.load('dino2.png').convert_alpha()
+dino_walk_2 = pygame.image.load('dino/dino2.png').convert_alpha()
 dino_walk_2 = pygame.transform.rotozoom(dino_walk_2, 0, 0.6)
-dino_walk_3 = pygame.image.load('dino3.png').convert_alpha()
+dino_walk_3 = pygame.image.load('dino/dino3.png').convert_alpha()
 dino_walk_3 = pygame.transform.rotozoom(dino_walk_3, 0, 0.6)
 
-dino_duck_1 = pygame.image.load('dinoduck1.png').convert_alpha()
+dino_duck_1 = pygame.image.load('dino/dinoduck1.png').convert_alpha()
 dino_duck_1 = pygame.transform.rotozoom(dino_duck_1, 0, 0.6)
-dino_duck_2 = pygame.image.load('dinoduck2.png').convert_alpha()
+dino_duck_2 = pygame.image.load('dino/dinoduck2.png').convert_alpha()
 dino_duck_2 = pygame.transform.rotozoom(dino_duck_2, 0, 0.6)
 
-dino_dead = pygame.image.load('dinodead.png').convert_alpha()
+dino_dead = pygame.image.load('dino/dinodead.png').convert_alpha()
 dino_dead = pygame.transform.rotozoom(dino_dead, 0, 0.6)
 
 dino_duck = [dino_duck_1, dino_duck_2]
@@ -74,12 +74,12 @@ def dino_animation():
         dino = dino_dead
 
 
-play = pygame.image.load('restart.png').convert_alpha()
+play = pygame.image.load('dino/restart.png').convert_alpha()
 play = pygame.transform.rotozoom(play, 0, 0.7)
 play_rect = play.get_rect(center=(WIDTH/2, HEIGHT/2))
 
 
-background = pygame.image.load('dinogamebg.png').convert_alpha()
+background = pygame.image.load('dino/dinogamebg.png').convert_alpha()
 
 obstacle_rect_list = []
 cloud_rect_list = []
